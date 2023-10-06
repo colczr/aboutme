@@ -113,8 +113,8 @@ var flightpath = {
 
   var graphdown1 = new TimelineMax ()
     .add([
-      TweenMax.to("#designer", 1, {y:2000, ease: Circ.easeInOut}),
-      TweenMax.to("#pianist", 1, {y:2000, ease: Circ.easeInOut}),
+      TweenMax.to("#designer", 1, {y:3000, ease: Circ.easeInOut}),
+      TweenMax.to("#pianist", 1, {y:3000, ease: Circ.easeInOut}),
       TweenMax.to("#head", 1, {y:-435, ease: Circ.easeInOut}),
       TweenMax.to("#resume", 1, {y:-170, ease: Circ.easeInOut})
     ]);
@@ -179,7 +179,7 @@ var flightpath = {
       TweenMax.to("#desec", 1, {x: 2500, ease:Circ.easeInOut})
     ]);
 
-  new ScrollMagic.Scene({triggerElement: "#stop2", triggerHook: 'onLeave', offset: 400, duration: 200, reverse: true})
+  new ScrollMagic.Scene({triggerElement: "#stop2", triggerHook: 'onLeave', offset: 470, duration: 300, reverse: true})
       .setTween(dsout)
       .setPin("#desec")
   		.addTo(controller);
